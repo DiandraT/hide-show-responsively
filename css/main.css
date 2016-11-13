@@ -20,8 +20,10 @@ body {
   margin: 0;
 }
 
-@media only screen and (min-width: 60em) {
-  
-  html {
+@media only screen and (min-width: 25em) {
+
+  img {
+    float: left;
+    width: 100%;
   }
 }
