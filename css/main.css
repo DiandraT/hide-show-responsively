@@ -17,13 +17,56 @@ html {
 }
 
 body {
+  display: block;
   margin: 0;
+  padding: .5em;
 }
+
+img {
+  width: 100%;
+}
+
+img:nth-child(2){
+    display: none;
+}
+
+img:nth-child(even) {
+  display: none;
+}
+
 
 @media only screen and (min-width: 25em) {
 
-  img {
-    float: left;
-    width: 100%;
+img {
+    display: inline-block;
+    height: auto;
   }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+img {
+  display: inline-block;
+  width: 49.5%;
+}
+
+img:nth-child(2) {
+  display: inline;
+}
+
+img:nth-child(even) {
+  display: inline;
+}
+
+}
+
+@media only screen and (min-width: 60em){
+
+img {
+  display: inline-block;
+  width: 23.75%;
+  height: auto;
+}
+
 }
